@@ -1,5 +1,6 @@
 .DS_Store
 node_modules/
+**/*/node_modules/
 /dist/
 npm-debug.log*
 yarn-debug.log*
@@ -7,6 +8,7 @@ yarn-error.log*
 /test/unit/coverage/
 /test/e2e/reports/
 selenium-debug.log
+**/*/bin/www
 
 # Editor directories and files
 .idea
