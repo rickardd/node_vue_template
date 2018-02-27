@@ -1,13 +1,14 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+// GET /
+router.get('/', function( req, res ) {
+  res.send('Home');
 });
 
-router.post('/register', (req, res, next) => {
-  res.send( `Hello ${req.body.email} from backend`);
+// GET /about
+router.get('/about', function( req, res ) {
+  res.send('About');
 });
 
 module.exports = router;
